@@ -9,3 +9,4 @@
 [submodule "composant_cle/Conversion_String_binaire"]
 	path = composant_cle/Conversion_String_binaire
 	url = https://github.com/jluuM2/Conversion_String_binaire.git
+	branch = main
