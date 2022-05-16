@@ -3,8 +3,9 @@ LIBS=-lpython3.9
 
 COMPOSANT = composant_cle
 
+LIB_ECC = micro-ecc/uECC
 LIBSO = ${COMPOSANT}.so
-LIBSO_OBJS = ${COMPOSANT}.o
+LIBSO_OBJS = ${COMPOSANT}.o ${LIB_ECC}.o
 
 include ../gcc.mk
 include ../pybind11.mk

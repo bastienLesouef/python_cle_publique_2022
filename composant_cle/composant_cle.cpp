@@ -51,6 +51,8 @@ char version[]="1.0";
 char const* getVersion() {
         return version;
 }
+
+// la classe cle que nous souhaitons importer
 class Cle {
 
 uint8_t* private_key_;
@@ -96,7 +98,7 @@ public:
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(cle_component, cle) {
+PYBIND11_MODULE(composant_cle, cle) {
 	cle.doc() = "Cle component 1.0";
 	
 	py::class_<Cle>(cle, "Cle")
